@@ -1,9 +1,15 @@
 GET http://localhost:3000 HTTP/1.1
-### test users
-GET http://localhost:3000/users HTTP/1.1
 
+### articles
+#### no query params
+GET http://localhost:3000/articles HTTP/1.1
 
-### Post Req
+### with query params
+GET http://localhost:3000/articles?type=json&amount=2 HTTP/1.1
+
+#### Large Text File Stream
+GET http://localhost:3000/largeTextFile HTTP/1.1
+#### Sample Post Req
 POST http://localhost:3000 HTTP/1.1
 content-type: application/json
 
